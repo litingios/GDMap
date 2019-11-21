@@ -99,7 +99,7 @@ GDMap
 //UIEdgeInsetsMake 参数 上左下右
 
 
-四.画线，按照高德的文档，拿到数据后，将数据转化为线的对象，再添加到地图上就可以了，在这里说一个坑吧，就是画的线在地图上展示不全的问题，也就是画的线在地图的显示范围内只露着半截或者更少。
+四.画单线，按照高德的文档，拿到数据后，将数据转化为线的对象，再添加到地图上就可以了，在这里说一个坑吧，就是画的线在地图上展示不全的问题，也就是画的线在地图的显示范围内只露着半截或者更少。
 
 再将线添加到地图上之后加上就可以了
 
@@ -111,9 +111,12 @@ GDMap
 ![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.58.52.png)
 
 
+五.画多条线，其实也简单，在单条线的外层加上一个循环即可，
 
 
+实现效果
 
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.59.04.png)
 
 
 
