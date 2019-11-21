@@ -36,7 +36,8 @@ GDMap
         
         MapModel * model = self.mapData[[annotation.title intValue]];
         annotationView.model = model;
-        [annotationView setSelected:YES];
+        <font color=#0099ff size=12 face="[annotationView setSelected:YES];">[annotationView setSelected:YES];</font>
+ 
         annotationView.imageView.image = Image(@"red_point");
         annotationView.imageView.contentMode = UIViewContentModeCenter;
         annotationView.canShowCallout = NO;
@@ -54,7 +55,7 @@ GDMap
 }
 
 那么就实现了以下效果
-![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.54.01.png)
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.58.38.png)
 
 
 
