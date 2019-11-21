@@ -57,7 +57,7 @@ GDMap
 
 加上这行代码
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `[annotationView setSelected:YES]`
 
 那么就实现了以下效果
 
