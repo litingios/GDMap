@@ -112,6 +112,7 @@ GDMap
 
 
 五.画多条线，其实也简单，在单条线的外层加上一个循环即可，
+
 那么在做路线规划类的需求时，需要实现以下效果
 
 ![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.59.04.png)
@@ -120,6 +121,21 @@ GDMap
 
 
 ![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2013.11.42.png)
+
+点击下面方案按钮时地图上的线的颜色也是跟着改变需要怎么实现呢？？
+
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `大思路`
+    
+高德地图画线时将线添加到地图上大家可能使用的是
+
+[_mapView addOverlays:self.polylineArr];这个方法，这个方法默认的添加的线全部位于同一个层级，那个画的第三条线肯定会盖在第一条线和第二条线的bug
+
+展示如下
+
+
+
+
+
 
 
 
