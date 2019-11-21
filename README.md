@@ -63,4 +63,34 @@ GDMap
 
 ![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.58.38.png)
 
+当你正在高兴的时候，却发现大头针的点击事件不见了，是因为弹出了自定义气泡，不在走大头针的代理方法。那么主意来了在自定制的气泡上面添加一个透明
+的按钮，不就可以解决了吗，却发现按钮的点击事件失效？？？ what 什么鬼   在使用高德地图sdk开发的时候,需要自定义气泡吹出框,发现气泡添加的点击事件或者button都没响应  原因:自定义的气泡是添加到大头针上的，而大头针的size只有下面很小一部分，所以calloutView是在大头针的外面的。
+ 而 iOS 按钮超过父视图范围是无法响应事件的处理方法。
+ 
+ - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `解决方法 在CustomAnnotationView.m（自定制大头针类）中重写hittest方法`
+ 
+ - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
 
+    UIView *view = [super hitTest:point withEvent:event];
+
+    if (view == nil) {
+
+        CGPoint tempoint = [self.calloutView.btn convertPoint:point fromView:self];
+        if (CGRectContainsPoint(self.calloutView.btn.bounds, tempoint))
+
+        {
+            view = self.calloutView.btn;
+        }
+    }
+    return view;
+}
+ 
+就实现了如下效果
+
+
+ 
+ 
+ 
+ 
+ 
+ 
