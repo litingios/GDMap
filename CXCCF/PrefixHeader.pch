@@ -1,0 +1,154 @@
+//
+//  PrefixHeader.pch
+//  UPloadVideo
+//
+//  Created by qiaowa on 2018/9/17.
+//  Copyright © 2018年 123. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef __OBJC__
+#import "AFNetworking.h"
+#import "UIColor+Extend.h"
+#import "CNPControl.h"
+#import "Custom.h"
+#import "MJRefresh.h"
+#import "RTRootNavigationController.h"
+#import "UIBarButtonItem+gyh.h"
+#import "CXRequestUrl.h"
+#import "MJExtension.h"
+#import "LTControl.h"
+#import "UIView+LTExtanslon.h"
+#import "UIImageView+WebCache.h"
+#import "UIBarButtonItem+LTExtension.h"
+#import "CXAlert.h"
+#import "CXUserCenterInfo.h"
+#import "CXConst.h"
+#import "UIImage+GIF.h"
+#import "CXAlert.h"
+
+#import "RouteQueryBtnView.h"
+#import "MapModel.h"
+#import "DiZhiModel.h"
+#import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapNaviKit/AMapNaviKit.h>
+#import <MapKit/MapKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+
+#endif
+/*
+ 宏
+ */
+// 系统版本
+#define SystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+#define iOS11 SystemVersion >= 11
+//int 转 NSString
+#define Transform_int_NSString(s) [NSString stringWithFormat:@"%d",s]
+//版本号
+#define VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+//用户信息
+#define Token [[CXUserCenterInfo shareUsrcenterInfo] userToken]
+#define NickName [[CXUserCenterInfo shareUsrcenterInfo] nickName]
+#define UserAvatar [[CXUserCenterInfo shareUsrcenterInfo] userAvatar]
+
+#define kheight (iPhoneX ? ([UIScreen mainScreen].bounds.size.height)-58 : ([UIScreen mainScreen].bounds.size.height))
+#define MainColor rgba(65,154,247,1)
+#define BlackTextColor rgba(51,51,51,1)
+
+//// 屏幕宽度
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+//// 屏幕高度
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreen_Rect  CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kWindowAddsubview(subview)  [[UIApplication sharedApplication].keyWindow addSubview:subview];
+#define __weakSelf  __weak typeof(self) weakSelf = self;
+
+#define NSLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+
+//NSUserDefaults存储
+#define UserDefaults(v,k) [[NSUserDefaults standardUserDefaults] setObject:v forKey:k]
+//NSUserDefaults读取
+#define GetUserDefaults(k) [[NSUserDefaults standardUserDefaults]objectForKey:k]
+//NSNotification
+
+#define Notification(name,obj) [[NSNotificationCenter defaultCenter]postNotificationName:name object:obj];
+//getNotification
+
+#define NotificationCenterAddObserver(selfObject,SELMethod,cnpNotificationName) [[NSNotificationCenter defaultCenter] addObserver:selfObject selector:SELMethod name:cnpNotificationName object:nil ];
+#define ApplicationDelegate    (AppDelegate *)[[UIApplication sharedApplication] delegate]
+
+
+//比例尺寸
+#define kScale ([UIScreen mainScreen].bounds.size.width)/ 375.0
+
+//自定义字体
+#define kSystemFont(size) [UIFont systemFontOfSize:size]
+#define boldSystemFontOfSize(size) [UIFont boldSystemFontOfSize:size];
+//自定义色值
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define HexColor(string) [UIColor colorWithHexColorString:(string) alpha:1.0]
+#define CXCommonBgColor RGBColor(238,238,238)
+
+// 设置圆角
+#define LRViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+//适配
+#define WidthScale (kScreenWidth/750.0)
+#define HeightScale (kScreenHeight == 812.0 ? 667.0/1334.0 : kScreenHeight/1334.0)//667
+
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+
+#define LazyMutableArray(_array) \
+return !(_array) ? (_array) = [NSMutableArray array] : (_array);
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
+? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)\
+|| CGSizeEqualToSize(CGSizeMake(1136, 640), [[UIScreen mainScreen] currentMode].size) : NO)
+// 加载的图片
+#define Image(pic) [UIImage imageNamed:pic]
+/*** 字号 ****/
+#define FONT(x) [UIFont systemFontOfSize:x]
+
+#define PlaceHolderImg [UIImage imageNamed:@"imgplaceholder"]
+#define PlaceHolderHead [UIImage imageNamed:@"head"]
+
+
+//导航栏的高度
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+#define DEVICE_TYPE_IPAD  ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+//颜色
+#define CXlineColor UIColorFromRGBA(0xdddddd,1)
+#define CX99Color UIColorFromRGBA(0x999999,1)
+#define CX66Color UIColorFromRGBA(0x666666,1)
+#define CX33Color UIColorFromRGBA(0x333333,1)
+#define CXccColor UIColorFromRGBA(0xcccccc,1)
+#define CXffColor UIColorFromRGBA(0xffffff,1)
+#define CXddColor UIColorFromRGBA(0xdddddd,1)
+#define CXCommonBgColor RGBColor(238,238,238)
+#define CXQianhui rgb(247,247,247)
+#define ViewBackColor rgb(245,245,245)
+
+//keys
+#define UMengKey @"5bc4020fb465f5d14a0000a7"  //友盟appke
+#define WXSecret @"4dc0675e8cc90f385984e42374a43da1"  //微信Secret
+#define WXAppKey @"wx4a632a6062eaf51c"  //微信AppKey
+#define GDAppKey @"17f18b02377b8e46e191c7f452777bb8"  //高德AppKey
+
+#endif /* PrefixHeader_pch */
+

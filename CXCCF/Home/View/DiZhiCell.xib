@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DiZhiCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="way_dingwei_black" translatesAutoresizingMaskIntoConstraints="NO" id="ynV-64-dFg">
+                        <rect key="frame" x="20" y="14" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="6eW-mB-Ufs"/>
+                            <constraint firstAttribute="height" constant="16" id="kiZ-kt-Ihf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="德兴服务区中石化加油站" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYz-vw-Tjc">
+                        <rect key="frame" x="50" y="0.0" width="240" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ynV-64-dFg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="QR4-6b-CCC"/>
+                    <constraint firstAttribute="trailing" secondItem="KYz-vw-Tjc" secondAttribute="trailing" constant="30" id="X63-09-mJW"/>
+                    <constraint firstItem="KYz-vw-Tjc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aRa-63-bfy"/>
+                    <constraint firstItem="ynV-64-dFg" firstAttribute="centerY" secondItem="KYz-vw-Tjc" secondAttribute="centerY" id="bNh-4q-Qlo"/>
+                    <constraint firstAttribute="bottom" secondItem="KYz-vw-Tjc" secondAttribute="bottom" id="bcu-1V-TNy"/>
+                    <constraint firstItem="KYz-vw-Tjc" firstAttribute="leading" secondItem="ynV-64-dFg" secondAttribute="trailing" constant="14" id="jTX-EF-M9I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="nameLab" destination="KYz-vw-Tjc" id="4D5-sx-akM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="way_dingwei_black" width="16" height="16"/>
+    </resources>
+</document>
