@@ -56,6 +56,7 @@ GDMap
 }
 
 <font color=#1296db size=14 face="黑体">加上这行代码</font>
+<font color=#00ffff size=3>null</font>
 
 <font color=#1296db size=16 face="黑体">[annotationView setSelected:YES]</font>
 
