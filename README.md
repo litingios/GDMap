@@ -61,6 +61,8 @@ GDMap
 
 <font face="黑体" color=red size=7>7号红色黑体</font>
 
+<font color="green"> Some green text </font>
+
 
 那么就实现了以下效果
 
