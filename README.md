@@ -132,7 +132,27 @@ GDMap
 
 展示如下
 
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/WechatIMG67.jpeg)
 
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/WechatIMG68.jpeg)
+
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/WechatIMG69.jpeg)
+
+
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `解决方法`
+
+
+使用这行代码  [_mapView insertOverlay:self.polylineArr[i] atIndex:-0.1 level:-0.1];  
+
+点击那条线就把那条线 insert到地图的最上层，永远不会被别的线挡住。
+
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `注意点`
+
+[_mapView insertOverlay:self.polylineArr[i] atIndex:-0.1 level:-0.1];
+
+地图上的默认地理标示 atInde: level: 这两个参数默认为0，我这里设为0.1的原因，是因为在做路线规划时，我不希望自己画的线盖住地图原有的高速名称，所以将这
+
+两个参数改成了-0.1，也就是位于地图默认地理标示的下面。
 
 
 
