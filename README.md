@@ -55,9 +55,12 @@ GDMap
     return nil;
 }
 
-<font color=#0099ff size=12 face="黑体">加上这行代码</font>
-<font color=#0099ff size=12 face="黑体">[annotationView setSelected:YES]</font>
+<font color=#1296db size=14 face="黑体">加上这行代码</font>
+
+<font color=#1296db size=16 face="黑体">[annotationView setSelected:YES]</font>
+
 那么就实现了以下效果
+
 ![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.58.38.png)
 
 
