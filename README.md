@@ -55,14 +55,7 @@ GDMap
     return nil;
 }
 
-<font color=#1296db size=14 face="黑体">加上这行代码</font>
-
-<font color=#1296db size=16 face="黑体">[annotationView setSelected:YES]</font>
-
-<font face="黑体" color=red size=7>7号红色黑体</font>
-
-<font color="green"> Some green text </font>
-
+加上这行代码
 
 那么就实现了以下效果
 
