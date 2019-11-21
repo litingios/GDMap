@@ -87,6 +87,8 @@ GDMap
  
 就实现了如下效果
 
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.58.41.png)
+
 
  
  
