@@ -89,6 +89,15 @@ GDMap
 
 ![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.58.41.png)
 
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `大头针知识补充`
+在地图上添加的大头针数量有的时候多达几千个，有的时候少则几十个，产品呢希望 几千个 的时候大头针在地图上显示全，在 几十个 的时候吧，地图比例尺最大，也就是显示最详细的位置信息，这个需求不要再苦苦的设置地图的比例尺了，
+
+一行代码搞定
+
+[self.mapView showAnnotations:self.backStateAnnotationArray edgePadding:UIEdgeInsetsMake(40, 40, 40, 40) animated:YES]; 
+
+//UIEdgeInsetsMake 参数 上左下右
+
 
  
  
