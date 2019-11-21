@@ -37,7 +37,8 @@ GDMap
         MapModel * model = self.mapData[[annotation.title intValue]];
         annotationView.model = model;
         <font color=#0099ff size=12 face="黑体">[annotationView setSelected:YES];</font>
- 
+    <font color=#0099ff size=12 face="黑体">黑体</font>
+
         annotationView.imageView.image = Image(@"red_point");
         annotationView.imageView.contentMode = UIViewContentModeCenter;
         annotationView.canShowCallout = NO;
