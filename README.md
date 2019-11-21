@@ -112,12 +112,14 @@ GDMap
 
 
 五.画多条线，其实也简单，在单条线的外层加上一个循环即可，
-
-
-实现效果
+那么在做路线规划类的需求时，需要实现以下效果
 
 ![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2010.59.04.png)
 
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2013.11.47.png)
+
+
+![Image text](https://github.com/litingios/GDMap/blob/master/tupian/Simulator%20Screen%20Shot%20-%20iPhone%207%20-%202019-11-21%20at%2013.11.42.png)
 
 
 
