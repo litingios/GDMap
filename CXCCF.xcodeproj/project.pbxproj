@@ -67,7 +67,7 @@
 		9E0C18342382410100464728 /* Annotation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E0C18332382410100464728 /* Annotation.plist */; };
 		9E0C18372382417E00464728 /* MapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C18362382417E00464728 /* MapModel.m */; };
 		9E0C183D2382867600464728 /* LevelAnnotationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C183C2382867600464728 /* LevelAnnotationVC.m */; };
-		9E29847E2385093700CF0F34 /* CXAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E29847C2385093700CF0F34 /* CXAlert.m */; };
+		9E1640C623A8605C004DC848 /* CXAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1640C523A8605C004DC848 /* CXAlert.m */; };
 		9E29848123850F0A00CF0F34 /* GuiDetailRodesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E29848023850F0A00CF0F34 /* GuiDetailRodesVC.m */; };
 		9E4080F5237E8E9600AF4DD8 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4080F4237E8E9600AF4DD8 /* HomeController.m */; };
 		9E4080F8237E8EA900AF4DD8 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4080F7237E8EA900AF4DD8 /* ActivityViewController.m */; };
@@ -86,6 +86,8 @@
 		9E6B0F642384E71F003568E1 /* DiZhiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6B0F632384E71F003568E1 /* DiZhiModel.m */; };
 		9E6B0F682384EC23003568E1 /* DiZhiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6B0F662384EC23003568E1 /* DiZhiCell.m */; };
 		9E6B0F692384EC23003568E1 /* DiZhiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6B0F672384EC23003568E1 /* DiZhiCell.xib */; };
+		9E9B085D238F4DF30027FD7C /* SULoginController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B085A238F4DF20027FD7C /* SULoginController1.xib */; };
+		9E9B085E238F4DF30027FD7C /* SULoginController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B085C238F4DF30027FD7C /* SULoginController1.m */; };
 		9ECEFA9023861A41004889BC /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEFA8F23861A41004889BC /* SpeechSynthesizer.m */; };
 		9EEA785323838E81002DB4E3 /* SelectAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA785223838E81002DB4E3 /* SelectAnnotationView.m */; };
 		9EEA785623839A66002DB4E3 /* CustomAnnotationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA785523839A66002DB4E3 /* CustomAnnotationVC.m */; };
@@ -217,8 +219,8 @@
 		9E0C18362382417E00464728 /* MapModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapModel.m; sourceTree = "<group>"; };
 		9E0C183B2382867600464728 /* LevelAnnotationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LevelAnnotationVC.h; sourceTree = "<group>"; };
 		9E0C183C2382867600464728 /* LevelAnnotationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelAnnotationVC.m; sourceTree = "<group>"; };
-		9E29847C2385093700CF0F34 /* CXAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXAlert.m; path = "../../../scoreTree司机端/司机端1.0/CXCCF/Tool/CXAlert.m"; sourceTree = "<group>"; };
-		9E29847D2385093700CF0F34 /* CXAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXAlert.h; path = "../../../scoreTree司机端/司机端1.0/CXCCF/Tool/CXAlert.h"; sourceTree = "<group>"; };
+		9E1640C423A8605C004DC848 /* CXAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAlert.h; sourceTree = "<group>"; };
+		9E1640C523A8605C004DC848 /* CXAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXAlert.m; sourceTree = "<group>"; };
 		9E29847F23850F0A00CF0F34 /* GuiDetailRodesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuiDetailRodesVC.h; sourceTree = "<group>"; };
 		9E29848023850F0A00CF0F34 /* GuiDetailRodesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuiDetailRodesVC.m; sourceTree = "<group>"; };
 		9E4080F3237E8E9600AF4DD8 /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
@@ -250,6 +252,9 @@
 		9E6B0F652384EC23003568E1 /* DiZhiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiZhiCell.h; sourceTree = "<group>"; };
 		9E6B0F662384EC23003568E1 /* DiZhiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiZhiCell.m; sourceTree = "<group>"; };
 		9E6B0F672384EC23003568E1 /* DiZhiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiZhiCell.xib; sourceTree = "<group>"; };
+		9E9B085A238F4DF20027FD7C /* SULoginController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SULoginController1.xib; sourceTree = "<group>"; };
+		9E9B085B238F4DF30027FD7C /* SULoginController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SULoginController1.h; sourceTree = "<group>"; };
+		9E9B085C238F4DF30027FD7C /* SULoginController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SULoginController1.m; sourceTree = "<group>"; };
 		9ECEFA8E23861A41004889BC /* SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
 		9ECEFA8F23861A41004889BC /* SpeechSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesizer.m; sourceTree = "<group>"; };
 		9EEA785123838E81002DB4E3 /* SelectAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectAnnotationView.h; sourceTree = "<group>"; };
@@ -306,6 +311,7 @@
 		7751578B2193E78F00DE08F9 /* CXCCF */ = {
 			isa = PBXGroup;
 			children = (
+				9E9B0859238F4CDE0027FD7C /* MVVM */,
 				77EC2C18219414CB00F26189 /* Activity */,
 				77EC2C27219414CB00F26189 /* Carserise */,
 				77EC2C22219414CB00F26189 /* Home */,
@@ -332,8 +338,8 @@
 		77D446CC21940B0600033B51 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				9E29847D2385093700CF0F34 /* CXAlert.h */,
-				9E29847C2385093700CF0F34 /* CXAlert.m */,
+				9E1640C423A8605C004DC848 /* CXAlert.h */,
+				9E1640C523A8605C004DC848 /* CXAlert.m */,
 				9E6B0F582384D019003568E1 /* map_line_nonal@1x.png */,
 				9E6B0F562384D008003568E1 /* map_line_select@1x.png */,
 				77EC2C142194122200F26189 /* UIView+WD.h */,
@@ -802,6 +808,16 @@
 			path = "路线";
 			sourceTree = "<group>";
 		};
+		9E9B0859238F4CDE0027FD7C /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B085B238F4DF30027FD7C /* SULoginController1.h */,
+				9E9B085C238F4DF30027FD7C /* SULoginController1.m */,
+				9E9B085A238F4DF20027FD7C /* SULoginController1.xib */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -864,6 +880,7 @@
 				775157992193E79200DE08F9 /* LaunchScreen.storyboard in Resources */,
 				9E6B0F552384CCAC003568E1 /* showBuilding.plist in Resources */,
 				775157962193E79200DE08F9 /* Assets.xcassets in Resources */,
+				9E9B085D238F4DF30027FD7C /* SULoginController1.xib in Resources */,
 				9E6B0F572384D008003568E1 /* map_line_select@1x.png in Resources */,
 				9E0C18342382410100464728 /* Annotation.plist in Resources */,
 				9E6B0F592384D019003568E1 /* map_line_nonal@1x.png in Resources */,
@@ -922,6 +939,7 @@
 				77D447A621940B0700033B51 /* MLMenuView.m in Sources */,
 				77D447B921940B0700033B51 /* WMMenuView.m in Sources */,
 				77D447CA21940B0700033B51 /* SearchBarText.m in Sources */,
+				9E1640C623A8605C004DC848 /* CXAlert.m in Sources */,
 				77D447BA21940B0700033B51 /* WMProgressView.m in Sources */,
 				9E0C18322382342900464728 /* CommonAnnotationVC.m in Sources */,
 				77D447AD21940B0700033B51 /* LXTagsView.m in Sources */,
@@ -942,7 +960,6 @@
 				77D447A721940B0700033B51 /* MLMenuItemsView.m in Sources */,
 				9E4080F5237E8E9600AF4DD8 /* HomeController.m in Sources */,
 				77D447CB21940B0700033B51 /* CNPControl.m in Sources */,
-				9E29847E2385093700CF0F34 /* CXAlert.m in Sources */,
 				9E0C182C2382327100464728 /* HomeTableViewCell.m in Sources */,
 				77D447BB21940B0700033B51 /* TFDropDownMenuView.m in Sources */,
 				7751578E2193E78F00DE08F9 /* AppDelegate.m in Sources */,
@@ -972,6 +989,7 @@
 				77D447C421940B0700033B51 /* Custom.m in Sources */,
 				9E29848123850F0A00CF0F34 /* GuiDetailRodesVC.m in Sources */,
 				77D447C321940B0700033B51 /* CXSingle.m in Sources */,
+				9E9B085E238F4DF30027FD7C /* SULoginController1.m in Sources */,
 				77D447CC21940B0700033B51 /* TextFilter.m in Sources */,
 				9E6B0F5C2384D322003568E1 /* RouteQueryBtnView.m in Sources */,
 				77D447D321940B0700033B51 /* CXUploadImage.m in Sources */,
